@@ -22,7 +22,7 @@ if [ -z "$MC_VERSION" ] || [ "$MC_VERSION" == "latest" ]; then
 elif [ "$MC_VERSION" == "snapshot" ]; then
   MANIFEST_URL=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json | jq --arg VERSION $LATEST_SNAPSHOT_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
 else
-  MANIFEST_URL=$(curl -sSL https://launchermeta .mojang.com/mc/game/version_manifest.json | jq --arg VERSION $MC_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
+  MANIFEST_URL=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json | jq --arg VERSION $MC_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
 fi
 
 echo "test4"
