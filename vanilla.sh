@@ -5,6 +5,9 @@
 mkdir -p /mnt/server
 cd /mnt/server
 
+echo "test"
+curl https://launchermeta.mojang.com/mc/game/version_manifest.json
+
 LATEST_VERSION=`curl https://launchermeta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.release'`
 LATEST_SNAPSHOT_VERSION=`curl https://launchermeta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.snapshot'`
 
