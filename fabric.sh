@@ -2,8 +2,6 @@
 # Fabric MC Installation Script
 #
 # Server Files: /mnt/server
-apt update
-apt install -y curl jq unzip dos2unix wget
 mkdir -p /mnt/server
 cd /mnt/server
 

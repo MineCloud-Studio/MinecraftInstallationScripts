@@ -3,8 +3,6 @@
 #
 # Server Files: /mnt/server
 
-apt update
-apt install -y curl jq
 
 VER_EXISTS=`curl -s https://api.purpurmc.org/v2/purpur | jq -r --arg VERSION $MC_VERSION '.versions[] | contains($VERSION)' | grep true`
 LATEST_PURPUR_VERSION=`curl -s https://api.purpurmc.org/v2/purpur | jq -r '.versions' | jq -r '.[0]'`

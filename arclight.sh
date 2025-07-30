@@ -2,8 +2,6 @@
 # Arclight Installation Script
 
 # Server Files: /mnt/server
-apt update
-apt install -y curl jq
 if [[ ! -d /mnt/server ]]; then
   mkdir /mnt/server
 fi

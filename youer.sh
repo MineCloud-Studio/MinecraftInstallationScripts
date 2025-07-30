@@ -2,9 +2,6 @@
 # Mohist Installation Script
 #
 # Server Files: /mnt/server
-apt update
-apt -y install curl
-
 #Go into main direction
 if [ ! -d /mnt/server ]; then
     mkdir -p /mnt/server

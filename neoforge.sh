@@ -3,9 +3,6 @@
 #
 # Server Files: /mnt/server
 
-apt-get update
-apt-get install -y curl xq openjdk-17-jdk
-
 if [[ ! -d /mnt/server ]]; then
     mkdir /mnt/server
 fi
