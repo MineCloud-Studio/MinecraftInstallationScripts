@@ -13,7 +13,7 @@ cd /mnt/server
 MC_VERSION="$(echo "$MC_VERSION" | tr -d ' ')"
 LOADER_VERSION="$(echo "$LOADER_VERSION" | tr -d ' ')"
 
-NEOFORGE_VERSION="${MC_VERSION}-${LOADER_VERSION}"
+NEOFORGE_VERSION="${LOADER_VERSION}"
 
 
 # If we have a specific NeoForge version set, use that
