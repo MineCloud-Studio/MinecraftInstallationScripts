@@ -25,6 +25,6 @@ fi
 wget -O fabric-installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/$FABRIC_VERSION/fabric-installer-$FABRIC_VERSION.jar
 java -jar fabric-installer.jar server -mcversion $MC_VERSION -loader $LOADER_VERSION -downloadMinecraft
 mv server.jar minecraft-server.jar
-mv fabric-server-launch.jar server.jar
+mv fabric-server-launch.jar ${SERVER_JARFILE}
 echo "serverJar=minecraft-server.jar" > fabric-server-launcher.properties
 echo -e "Install Complete"
