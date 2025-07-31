@@ -5,8 +5,4 @@
 
 cd /mnt/server
 
-if [ -z "${LOADER_VERSION}" ] || [ "${LOADER_VERSION}" == "latest" ]; then
-    LOADER_VERSION="lastStableBuild"
-fi
-
-curl -o ${SERVER_JARFILE} https://ci.md-5.net/job/BungeeCord/${LOADER_VERSION}/artifact/bootstrap/target/BungeeCord.jar
+curl -o ${SERVER_JARFILE} https://ci.md-5.net/job/BungeeCord/lastStableBuild/artifact/bootstrap/target/BungeeCord.jar
